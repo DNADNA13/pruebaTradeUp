@@ -14,14 +14,14 @@ import androidx.compose.ui.tooling.preview.Preview
 import dev.luischang.appdpa.presentation.auth.LoginScreen
 import dev.luischang.appdpa.presentation.auth.RegisterScreen
 import dev.luischang.appdpa.presentation.navigation.AppNavGraph
-import dev.luischang.appdpa.ui.theme.AppDPATheme
+import dev.luischang.appdpa.ui.theme.AppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            AppDPATheme {
+            AppTheme {
                 AppNavGraph()
             }
         }
