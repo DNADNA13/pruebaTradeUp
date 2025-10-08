@@ -10,6 +10,7 @@ import dev.luischang.appdpa.presentation.auth.LoginScreen
 import dev.luischang.appdpa.presentation.auth.RegisterScreen
 import dev.luischang.appdpa.presentation.home.ExploreOffersScreen
 import dev.luischang.appdpa.presentation.home.HomeScreen
+import dev.luischang.appdpa.presentation.home.MisPropuestasScreen
 import dev.luischang.appdpa.presentation.home.OfferDetailScreen
 import dev.luischang.appdpa.presentation.permissions.GalleryPermissionScreen
 
@@ -51,6 +52,9 @@ fun AppNavGraph(){
                     OfferDetailScreen(navController, offer = it)
                 }
             }
+        }
+        composable("mis_propuestas") {
+            MisPropuestasScreen(navController)
         }
 
     }
