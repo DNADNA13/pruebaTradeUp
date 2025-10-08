@@ -61,13 +61,55 @@ fun DrawerScaffold(navController: NavController, content: @Composable () -> Unit
                 )
 
                 NavigationDrawerItem(
-                    label =  { Text("Favoritos")},
+                    label =  { Text("Mis ofertas")},
                     selected = false,
                     onClick = {
-                        navController.navigate("favorites")
+                        navController.navigate("My Offers")
                         scope.launch { drawerState.close() }
                     }
                 )
+
+                NavigationDrawerItem(
+                    label =  { Text("Mis propuestas")},
+                    selected = false,
+                    onClick = {
+                        navController.navigate("My Trade Requests")
+                        scope.launch { drawerState.close() }
+                    }
+                )
+                NavigationDrawerItem(
+                    label =  { Text("Reportes")},
+                    selected = false,
+                    onClick = {
+                        navController.navigate("Reports")
+                        scope.launch { drawerState.close() }
+                    }
+                )
+                NavigationDrawerItem(
+                    label =  { Text("Panel de moderacion")},
+                    selected = false,
+                    onClick = {
+                        navController.navigate("Moderation panel")
+                        scope.launch { drawerState.close() }
+                    }
+                )
+                NavigationDrawerItem(
+                    label =  { Text("Trueques recibidos")},
+                    selected = false,
+                    onClick = {
+                        navController.navigate("Trades received")
+                        scope.launch { drawerState.close() }
+                    }
+                )
+                NavigationDrawerItem(
+                    label =  { Text("Historial de trueques")},
+                    selected = false,
+                    onClick = {
+                        navController.navigate("Trade history")
+                        scope.launch { drawerState.close() }
+                    }
+                )
+
             }
         }
 
@@ -92,3 +134,5 @@ fun DrawerScaffold(navController: NavController, content: @Composable () -> Unit
         }
     }
 }
+
+

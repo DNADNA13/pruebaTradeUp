@@ -19,7 +19,7 @@ import androidx.navigation.NavController
 import coil.compose.rememberAsyncImagePainter
 
 @Composable
-fun MisPropuestasScreen(navController: NavController) {
+fun SendOfferScreen(navController: NavController) {
     var ofertaTexto by remember { mutableStateOf("") }
 
     Column(
@@ -100,7 +100,7 @@ fun MisPropuestasScreen(navController: NavController) {
             }
         }
 
-        // ✍️ Campo de texto para la descripción de la propuesta
+        // Campo de texto para la descripción de la propuesta
         OutlinedTextField(
             value = ofertaTexto,
             onValueChange = { ofertaTexto = it },
